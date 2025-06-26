@@ -69,9 +69,11 @@ const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-            Aswin K
+          
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-indigo-200 dark:to-purple-200 bg-clip-text text-transparent">
+              Aswin K
           </h1>
+
           
           {/* Typing Animation */}
           <div className="mb-6 h-16 flex items-center justify-center">
