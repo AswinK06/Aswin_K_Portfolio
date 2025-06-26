@@ -319,9 +319,10 @@ const Skills = () => {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Sparkles className="text-indigo-400 animate-bounce" size={40} />
-            <h2 className="text-4xl md:text-5xl font-bold text-white bg-gradient-to-r from-[#a145f4] to-[#5f5df9] bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
               Skills & Technologies
             </h2>
+
             <Sparkles className="text-indigo-400 animate-bounce" size={40} />
           </div>
           <div className="w-32 h-1 bg-gradient-to-r from-indigo-400 to-purple-400 mx-auto rounded-full"></div>
