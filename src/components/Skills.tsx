@@ -442,9 +442,9 @@ const Skills = () => {
             <Sparkles className="text-indigo-400 animate-bounce" size={36} />
             {/* ✅ FIXED: Wrapped h2 in div and added leading-normal */}
             <div className="overflow-visible">
-              <h2 className="text-4xl md:text-5xl font-bold leading-normal text-gray-900 dark:text-white bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
-                Skills & Technologies
-              </h2>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text text-transparent">
+  Skills & Technologies
+</h2>
             </div>
             <Sparkles className="text-indigo-400 animate-bounce" size={36} />
           </div>
