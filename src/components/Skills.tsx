@@ -441,11 +441,16 @@ const Skills = () => {
           <div className="flex items-center justify-center space-x-6 mb-4 overflow-visible">
             <Sparkles className="text-indigo-400 animate-bounce" size={36} />
             {/* ✅ FIXED: Wrapped h2 in div and added leading-normal */}
-            <div className="overflow-visible">
-    <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text leading-[1.35] pb-1">
-  Skills & Technologies
-</h2>
-            </div>
+{/*             <div className="overflow-visible">
+                <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text leading-[1.35] pb-1">
+                    Skills & Technologies
+            </div> */}
+                  <div className="overflow-visible">
+  <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text leading-[1.5] pb-2">
+    Skills & Technologies
+  </h2>
+</div>
+
             <Sparkles className="text-indigo-400 animate-bounce" size={36} />
           </div>
 
