@@ -42,14 +42,14 @@ const Projects = () => {
       <div className="absolute top-20 left-10 w-32 h-32 bg-violet-400/10 dark:bg-violet-400/10 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-400/10 dark:bg-purple-400/10 rounded-full blur-xl animate-pulse delay-1000"></div>
       
-      <div className="max-w-6xl mx-auto relative z-10">
-  <div className="text-center mb-16 overflow-visible">
-    <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-indigo-600 to-violet-600 dark:from-purple-400 dark:via-indigo-400 dark:to-violet-400 bg-clip-text leading-tight tracking-tight pb-3">
-      Featured Projects
-    </h2>
-    <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-400 mx-auto rounded-full"></div>
-  </div>
-</div>
+       <div className="max-w-6xl mx-auto relative z-10">
+        {/* Section heading */}
+        <div className="text-center mb-16 overflow-visible">
+          <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-purple-600 via-indigo-600 to-violet-600 dark:from-purple-400 dark:via-indigo-400 dark:to-violet-400 bg-clip-text leading-tight tracking-tight pb-3">
+            Featured Projects
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-400 mx-auto rounded-full"></div>
+        </div>
 
         
         <div className="grid lg:grid-cols-3 gap-8">
