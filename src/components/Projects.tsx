@@ -10,8 +10,8 @@ const Projects = () => {
       tech: ["JavaScript", "MySQL", "HTML", "CSS", "VS Code"],
       type: "Tourism Management System",
       highlights: ["40% efficiency improvement", "Booking automation", "Database optimization", "User-friendly interface"],
-      codeUrl: "https://github.com/AswinK06/Agriseithi",
-      demoUrl: "https://github.com/AswinK06/Agriseithi"
+      codeUrl: "https://github.com/AswinK06/Tourism-Management-System",
+      demoUrl: ""
     },
     {
       title: "Consultancy Project",
@@ -29,7 +29,7 @@ const Projects = () => {
       type: "Agricultural Technology Platform",
       highlights: ["Real-time data integration", "API integration", "Farmer accessibility", "Responsive design", "Data-driven insights"],
       codeUrl: "https://github.com/AswinK06/Agriseithi",
-      demoUrl: "https://github.com/AswinK06/Agriseithi"
+      demoUrl: "https://agriseithi.netlify.app/"
     }
   ];
 
