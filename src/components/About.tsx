@@ -1,7 +1,5 @@
 import { Code, Database, Globe, Shield, Rocket, Target, Download, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-
 const handleResumeDownload = () => {
   const link = document.createElement('a');
   link.href = '/lovable-uploads/ASWIN_K_RESUME_1.pdf';
@@ -10,8 +8,8 @@ const handleResumeDownload = () => {
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
-
 };
+
 
   return (
     <section
