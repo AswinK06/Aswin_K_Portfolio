@@ -15,8 +15,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 px-6 relative overflow-hidden bg-gradient-to-br from-[#faf6ff] via-[#f0e9ff] to-[#ede6ff] dark:from-[#120026] dark:via-[#1e0036] dark:to-[#2a004d] transition-all duration-500"
-    >
+      className="py-20 px-6 relative overflow-hidden bg-gradient-to-br from-[#faf6ff] via-[#f0e9ff] to-[#ede6ff] dark:from-[#120026] dark:via-[#1e0036] dark:to-[#2a004d] transition-all duration-500">
       {/* Background sparkles (optional) */}
       <div className="absolute -top-10 -right-10 opacity-20 dark:opacity-10 blur-2xl text-purple-300">
         <Rocket size={120} />
