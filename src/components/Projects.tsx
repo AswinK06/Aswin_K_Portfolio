@@ -70,10 +70,10 @@ const Projects = () => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Heading */}
-        <div className="text-center mb-16 pb-4">
+        <div className="text-center mb-16 pb-10">
           <div className="flex justify-center items-center gap-4">
             <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
-            <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text leading-tight">
+            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text leading-tight">
               Featured Projects
             </h2>
             <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
