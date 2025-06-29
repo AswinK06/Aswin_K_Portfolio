@@ -73,9 +73,11 @@ const Projects = () => {
        <div className="text-center mb-14">
   <div className="inline-flex items-center gap-3">
     <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={28} />
-    <h2 className="text-[2.4rem] md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text text-transparent leading-[1.3]">
-      Featured Projects
-    </h2>
+   <div className="overflow-visible">
+  <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text leading-[1.5] pb-2">
+       Featured Projects
+  </h2>
+</div>
     <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={28} />
   </div>
   <div className="w-24 h-1.5 bg-purple-500 dark:bg-purple-400 mx-auto mt-2.5 rounded-full"></div>
