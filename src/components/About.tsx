@@ -1,6 +1,6 @@
 import { Code, Database, Globe, Shield, Rocket, Target, Download, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { toast } from 'sonner';
+
 
 const handleResumeDownload = () => {
   const link = document.createElement('a');
@@ -11,7 +11,6 @@ const handleResumeDownload = () => {
   link.click();
   document.body.removeChild(link);
 
-  toast.success('Resume downloaded successfully!');
 };
 
   return (
