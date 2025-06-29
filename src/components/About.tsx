@@ -4,8 +4,8 @@ import { Button } from '@/components/ui/button';
 const About = () => {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
-    link.href = '/lovable-uploads/f5c7362c-7dc4-4df3-a1ad-142ce42a94a0.png';
-    link.download = 'Aswin_K_Resume.png';
+    link.href = '/lovable-uploads/ASWIN_K_RESUME_1.pdf';
+    link.download = 'Aswin_K_Resume.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
