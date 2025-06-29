@@ -70,16 +70,17 @@ const Projects = () => {
 
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Heading */}
-        <div className="text-center mb-16 pb-10">
-          <div className="flex justify-center items-center gap-4">
-            <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
-            <h2 className="text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text leading-tight">
-              Featured Projects
-            </h2>
-            <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
-          </div>
-          <div className="w-20 h-1 bg-purple-500 dark:bg-purple-400 mx-auto mt-3 rounded-full"></div>
-        </div>
+        <div className="text-center mb-14 overflow-visible">
+  <div className="flex justify-center items-center gap-4">
+    <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={24} />
+    <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text text-transparent leading-[1.2]">
+      Featured Projects
+    </h2>
+    <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={24} />
+  </div>
+  <div className="w-24 h-1.5 bg-purple-500 dark:bg-purple-400 mx-auto mt-3 rounded-full"></div>
+</div>
+
 
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-3 gap-8">
