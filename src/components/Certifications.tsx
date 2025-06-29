@@ -88,15 +88,14 @@ const Certifications = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section Heading with Animated Icons */}
         <div className="text-center mb-14">
-          <div className="flex justify-center items-center gap-4">
-            <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
-            <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text text-transparent">
-              Professional Certifications
-            </h2>
-            <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce delay-300" size={32} />
-          </div>
-          <div className="w-20 h-1 bg-purple-500 dark:bg-purple-400 mx-auto mt-3 rounded-full"></div>
-        </div>
+  <div className="flex justify-center items-center gap-4">
+    <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
+    <h3 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4 bg-gradient-to-r from-purple-600 via-indigo-600 to-violet-600 dark:from-purple-400 dark:via-indigo-400 dark:to-violet-400 bg-clip-text text-transparent">
+    </h2>
+    <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
+  </div>
+  <div className="w-20 h-1 bg-purple-500 dark:bg-purple-400 mx-auto mt-3 rounded-full"></div>
+</div>
 
         {/* Certificates Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
