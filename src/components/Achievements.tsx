@@ -1,4 +1,3 @@
-
 import { Trophy, Award, Star, Eye } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -25,25 +24,25 @@ const Achievements = () => {
 
   return (
     <section id="achievements" className="py-20 px-4 relative overflow-hidden bg-gradient-to-br from-white via-purple-50 to-indigo-100 dark:from-slate-900 dark:via-purple-900 dark:to-indigo-900">
-      {/* Background styling based on theme */}
+      {/* Decorative Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-purple-100/30 via-transparent to-indigo-100/30 dark:from-purple-900/30 dark:via-transparent dark:to-indigo-900/30"></div>
-      
-      {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-violet-400/10 dark:bg-violet-400/10 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-400/10 dark:bg-purple-400/10 rounded-full blur-xl animate-pulse delay-1000"></div>
-      
+
       <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Star className="text-blue-600 dark:text-blue-400" size={40} />
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4 bg-gradient-to-r from-purple-600 via-indigo-600 to-violet-600 dark:from-purple-400 dark:via-indigo-400 dark:to-violet-400 bg-clip-text text-transparent">
+        {/* Heading with bouncing icons */}
+        <div className="text-center mb-14">
+          <div className="flex justify-center items-center gap-4">
+            <Star className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text text-transparent">
               Achievements
             </h2>
-            <Star className="text-blue-600 dark:text-blue-400" size={40} />
+            <Star className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
           </div>
-          <div className="w-24 h-1 bg-gradient-to-r from-violet-400 to-purple-400 mx-auto rounded-full"></div>
+          <div className="w-20 h-1 bg-purple-500 dark:bg-purple-400 mx-auto mt-3 rounded-full"></div>
         </div>
-        
+
+        {/* Achievement Cards */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {achievements.map((achievement, index) => (
             <div key={index} className="group relative">
@@ -68,7 +67,7 @@ const Achievements = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="flex justify-center">
                   <Dialog>
                     <DialogTrigger asChild>
@@ -82,8 +81,8 @@ const Achievements = () => {
                         <DialogTitle className="text-gray-900 dark:text-blue-300">{achievement.subtitle}</DialogTitle>
                       </DialogHeader>
                       <div className="mt-4">
-                        <img 
-                          src={achievement.image} 
+                        <img
+                          src={achievement.image}
                           alt={`${achievement.subtitle} Certificate`}
                           className="w-full h-auto rounded-lg border border-blue-300 dark:border-blue-600"
                         />
