@@ -1,16 +1,18 @@
 import { Code, Database, Globe, Shield, Rocket, Target, Download, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { toast } from 'sonner';
 
-const About = () => {
-  const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/lovable-uploads/ASWIN_K_RESUME_1.pdf';
-    link.download = 'Aswin_K_Resume.pdf';
-    link.target = '_blank';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+const handleResumeDownload = () => {
+  const link = document.createElement('a');
+  link.href = '/lovable-uploads/ASWIN_K_RESUME_1.pdf';
+  link.download = 'Aswin_K_Resume.pdf';
+  link.target = '_blank';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  toast.success('Resume downloaded successfully!');
+};
 
   return (
     <section
