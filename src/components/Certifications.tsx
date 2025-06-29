@@ -85,18 +85,20 @@ const Certifications = () => {
       <div className="absolute top-20 left-10 w-32 h-32 bg-violet-400/10 dark:bg-violet-400/10 rounded-full blur-xl animate-pulse"></div>
       <div className="absolute bottom-20 right-10 w-40 h-40 bg-purple-400/10 dark:bg-purple-400/10 rounded-full blur-xl animate-pulse delay-1000"></div>
 
-<div className="text-center mb-14">
-  <div className="flex justify-center items-center gap-4">
-    <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
-    <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text text-transparent">
-      Professional Certifications
-    </h2>
-    <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce delay-300" size={32} />
-  </div>
-  <div className="w-20 h-1 bg-purple-500 dark:bg-purple-400 mx-auto mt-3 rounded-full"></div>
-</div>
+      <div className="max-w-6xl mx-auto relative z-10">
+        {/* Section Heading with Animated Icons */}
+        <div className="text-center mb-14">
+          <div className="flex justify-center items-center gap-4">
+            <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce" size={32} />
+            <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-purple-600 to-indigo-600 dark:from-purple-300 dark:to-indigo-400 bg-clip-text text-transparent">
+              Professional Certifications
+            </h2>
+            <Trophy className="text-purple-600 dark:text-purple-300 animate-bounce delay-300" size={32} />
+          </div>
+          <div className="w-20 h-1 bg-purple-500 dark:bg-purple-400 mx-auto mt-3 rounded-full"></div>
+        </div>
 
-        {/* Grid */}
+        {/* Certificates Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {certifications.map((cert, index) => (
             <div key={index} className="group relative">
