@@ -1,4 +1,3 @@
-
 import { Trophy, Award, Star, Eye } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
@@ -15,9 +14,9 @@ const Achievements = () => {
     },
     {
       title: "🏅 Top Performer",
-      subtitle: "Ranked 227th out of 3000+ Participants",
-      description: "Achieved competitive ranking in Unstop's Engineering February Series - a monthly problem-solving challenge demonstrating technical excellence and problem-solving skills",
-      provider: "Unstop Engineering February Series",
+      subtitle: "Ranked 227th out of 3000+",
+      description: "Achieved competitive ranking in Unstop's Engineering February Series - a monthly problem-solving challenge demonstrating technical excellence",
+      provider: "Certificate of Excellence",
       date: "February 2025",
       image: "/lovable-uploads/7ab3520a-0d19-4318-8221-8dbf4a1a5d0c.png"
     }

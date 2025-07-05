@@ -1,24 +1,8 @@
-
 import { Rocket, ExternalLink, Github } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
-    {
-      title: "IPL Match Prediction",
-      description:
-        "Built a machine learning model to predict IPL match outcomes using past match data. Implemented Logistic Regression and Random Forest algorithms for classification and used Pandas, Scikit-learn, and Matplotlib for preprocessing and analysis.",
-      tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "Matplotlib", "Logistic Regression", "Random Forest"],
-      type: "Machine Learning Project",
-      highlights: [
-        "Predictive modeling with ML algorithms",
-        "Data preprocessing & analysis",
-        "Statistical analysis of cricket data",
-        "Model evaluation & optimization",
-      ],
-      codeUrl: "",
-      demoUrl: "",
-    },
     {
       title: "Wanderluxe",
       description:
@@ -33,6 +17,21 @@ const Projects = () => {
       ],
       codeUrl: "https://github.com/AswinK06/Tourism-Management-System",
       demoUrl: "",
+    },
+    {
+      title: "Consultancy Project",
+      description:
+        "Created a user-friendly UI/UX for a temple website, designing login/signup modules, a landing page, and an employment details section using Figma for clean, intuitive design.",
+      tech: ["UI/UX Design", "Figma", "Frontend Development", "User Authentication"],
+      type: "Temple Management Platform",
+      highlights: [
+        "Complete UI/UX design",
+        "User authentication system",
+        "Employment management",
+        "Professional Figma design",
+      ],
+      codeUrl: "https://github.com/AswinK06/Consultancy-Project",
+      demoUrl: "https://gokul-kovil-project.web.app/home",
     },
     {
       title: "Agriseithi",
@@ -72,17 +71,17 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Heading */}
        <div className="text-center mb-14">
-          <div className="inline-flex items-center gap-3">
-            <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={28} />
-           <div className="overflow-visible">
-              <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text leading-[1.5] pb-2">
-                   Featured Projects
-              </h2>
-            </div>
-            <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={28} />
-          </div>
-          <div className="w-24 h-1.5 bg-purple-500 dark:bg-purple-400 mx-auto mt-2.5 rounded-full"></div>
-        </div>
+  <div className="inline-flex items-center gap-3">
+    <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={28} />
+   <div className="overflow-visible">
+  <h2 className="block text-4xl md:text-5xl font-bold text-transparent bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 dark:from-violet-400 dark:via-purple-400 dark:to-indigo-400 bg-clip-text leading-[1.5] pb-2">
+       Featured Projects
+  </h2>
+</div>
+    <Rocket className="text-purple-600 dark:text-purple-300 animate-bounce" size={28} />
+  </div>
+  <div className="w-24 h-1.5 bg-purple-500 dark:bg-purple-400 mx-auto mt-2.5 rounded-full"></div>
+</div>
 
         {/* Projects Grid */}
         <div className="grid lg:grid-cols-3 gap-8">
@@ -132,17 +131,15 @@ const Projects = () => {
                   </div>
 
                   <div className="flex gap-3">
-                    {project.codeUrl && (
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className="border-violet-500 text-violet-600 dark:text-violet-400 hover:bg-violet-500 hover:text-white"
-                        onClick={() => window.open(project.codeUrl, '_blank')}
-                      >
-                        <Github size={16} className="mr-2" />
-                        Code
-                      </Button>
-                    )}
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="border-violet-500 text-violet-600 dark:text-violet-400 hover:bg-violet-500 hover:text-white"
+                      onClick={() => window.open(project.codeUrl, '_blank')}
+                    >
+                      <Github size={16} className="mr-2" />
+                      Code
+                    </Button>
                     {project.demoUrl && (
                       <Button
                         size="sm"
