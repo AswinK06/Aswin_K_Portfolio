@@ -1,3 +1,4 @@
+
 import { Code, Database, Globe, Shield, Rocket, Target, Download, MapPin, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -38,10 +39,10 @@ const About = () => {
         {/* Text Content */}
         <div className="space-y-6 text-gray-800 dark:text-gray-200">
           <p className="border-l-4 border-purple-500 dark:border-purple-400 pl-5 text-lg font-medium leading-relaxed hover:translate-x-1 transition-all duration-300">
-            I'm a passionate Web Technology enthusiast focused on building secure, scalable, and intuitive digital solutions. With hands-on experience in API testing and full-stack development, I enjoy turning ideas into real-world applications.
+            Enthusiastic AI/ML beginner with hands-on exposure to Object Detection using TensorFlow/Keras and a strong foundation in Python and ReactJS. Actively learning LLMs, LangChain, and Generative AI with a keen interest in building scalable, real-world AI solutions.
           </p>
           <p className="border-l-4 border-indigo-500 dark:border-indigo-400 pl-5 text-lg font-medium leading-relaxed hover:translate-x-1 transition-all duration-300">
-            Currently pursuing my B.E. in Computer Science at K S Rangasamy College of Technology, I’m always exploring new tools and frameworks to refine my skills and craft better web experiences.
+            Currently pursuing my B.E. in Computer Science at K S Rangasamy College of Technology, I'm always exploring new tools and frameworks in AI/ML, web development, and modern technologies to craft innovative solutions.
           </p>
 
           {/* Location & Resume */}
@@ -65,10 +66,10 @@ const About = () => {
         {/* Icon Cards */}
         <div className="grid grid-cols-2 gap-6">
           {[
-            { icon: Code, title: "Clean Code", desc: "Writing maintainable and efficient code" },
-            { icon: Database, title: "Database Design", desc: "MySQL & MongoDB expertise" },
-            { icon: Globe, title: "Web APIs", desc: "RESTful API development & testing" },
-            { icon: Shield, title: "Security", desc: "Secure coding practices" },
+            { icon: Code, title: "AI/ML Development", desc: "TensorFlow, Keras & Python expertise" },
+            { icon: Database, title: "Database Design", desc: "MySQL & MongoDB proficiency" },
+            { icon: Globe, title: "Web Development", desc: "React.js & full-stack development" },
+            { icon: Shield, title: "Object Detection", desc: "Computer vision & AI applications" },
           ].map((item, index) => (
             <div
               key={index}
