@@ -6,7 +6,7 @@ const About = () => {
   const handleResumeDownload = () => {
     const link = document.createElement('a');
     link.href = '/lovable-uploads/ASWIN_K_RESUME.pdf';
-    link.download = 'Aswin_K_Resume.pdf';
+    link.download = 'ASWIN_K_RESUME.pdf';
     link.target = '_blank';
     document.body.appendChild(link);
     link.click();
