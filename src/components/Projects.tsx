@@ -16,8 +16,8 @@ const Projects = () => {
         "Statistical analysis of cricket data",
         "Model evaluation & optimization",
       ],
-      codeUrl: "",
-      demoUrl: "",
+      codeUrl: "https://github.com/AswinK06/IPL-Match-Prediction",
+      demoUrl: "https://iplmatchpredict.streamlit.app/",
     },
     {
       title: "Wanderluxe",
@@ -32,7 +32,7 @@ const Projects = () => {
         "User-friendly interface",
       ],
       codeUrl: "https://github.com/AswinK06/Tourism-Management-System",
-      demoUrl: "",
+      demoUrl: "https://wanderluxe-demo.netlify.app/",
     },
     {
       title: "Agriseithi",
