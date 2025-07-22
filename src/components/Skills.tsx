@@ -154,8 +154,8 @@ const Skills = () => {
     {
       title: "Web Technologies",
       skills: [
-        { name: "HTML", level: 90 },
-        { name: "CSS", level: 85 },
+        { name: "HTML/CSS", level: 85 },
+        // { name: "CSS", level: 85 },
         { name: "Bootstrap", level: 80 },
         { name: "React.js", level: 80 },
         { name: "Express.js", level: 75 },
