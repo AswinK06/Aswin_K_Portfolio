@@ -1,4 +1,3 @@
-
 import { Award, Sparkles, Code, Globe, Database, Settings, Brain, Wrench } from 'lucide-react';
 
 const Skills = () => {
@@ -6,10 +5,10 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "Python", level: 85 },
-        { name: "C", level: 80 },
         { name: "Java", level: 80 },
-        { name: "JavaScript", level: 75 }
+        { name: "Javascript", level: 80 },
+        { name: "C", level: 75 },
+        { name: "Python", level: 70 }
       ],
       icon: Code
     },
@@ -35,7 +34,6 @@ const Skills = () => {
       title: "AI/ML Tools",
       skills: [
         { name: "TensorFlow", level: 80 },
-        { name: "Scikit-learn", level: 75 },
         { name: "Pandas", level: 85 },
         { name: "NumPy", level: 80 }
       ],
@@ -54,8 +52,7 @@ const Skills = () => {
       skills: [
         { name: "Figma", level: 75 },
         { name: "Postman", level: 80 },
-        { name: "Stream.lit (basics)", level: 65 },
-        { name: "Docker (learning)", level: 50 }
+        { name: "Selenium Testing", level: 65 },
       ],
       icon: Wrench
     }
