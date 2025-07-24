@@ -39,7 +39,8 @@ const About = () => {
         {/* Text Content */}
         <div className="space-y-6 text-gray-800 dark:text-gray-200">
           <p className="border-l-4 border-purple-500 dark:border-purple-400 pl-5 text-lg font-medium leading-relaxed hover:translate-x-1 transition-all duration-300">
-            Enthusiastic engineering student with hands-on experience in backend testing using Selenium and Postman, and a solid grasp of SDLC/STLC. Proficient in Python, Java, and ReactJS, with exposure to object detection using TensorFlow/Keras. Currently exploring REST/SOAP APIs, Agile methodologies, and Docker, with a strong interest in building scalable, testable software systems.
+            Enthusiastic AI/ML beginner with hands-on exposure to Object Detection using TensorFlow/Keras and a strong foundation in Python and ReactJS. Actively learning LLMs, LangChain, and Generative AI with a keen interest in building scalable, real-world AI solutions.
+          </p>
           <p className="border-l-4 border-indigo-500 dark:border-indigo-400 pl-5 text-lg font-medium leading-relaxed hover:translate-x-1 transition-all duration-300">
             Currently pursuing my B.E. in Computer Science at K S Rangasamy College of Technology, I'm always exploring new tools and frameworks in AI/ML, web development, and modern technologies to craft innovative solutions.
           </p>
