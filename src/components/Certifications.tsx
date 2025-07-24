@@ -5,76 +5,44 @@ import { Button } from '@/components/ui/button';
 const Certifications = () => {
   const certifications = [
     {
+      title: "Java Programming Fundamentals",
+      provider: "INFOSYS SPRINGBOARD",
+      description: "Core Java programming concepts and object-oriented programming principles",
+      date: "2024",
+      score: "Completed Successfully",
+      image: "/lovable-uploads/10e6747b-43a3-473f-926f-2e4b05a7b833.png"
+    },
+    {
+      title: "Introduction to AI",
+      provider: "INFOSYS SPRINGBOARD",
+      description: "Comprehensive introduction to artificial intelligence concepts and applications",
+      date: "2024",
+      score: "Completed Successfully",
+      image: "/lovable-uploads/08155e08-c3cd-4291-9e4c-94bb9c72bed9.png"
+    },
+    {
       title: "Cyber Security and Privacy",
       provider: "NPTEL",
       description: "Advanced concepts in cybersecurity, privacy protection, and secure systems",
-      date: "July-October 2024",
-      score: "Score: 54%",
+      date: "2024",
+      score: "Completed Successfully",
       image: "/lovable-uploads/3f8e1dde-da90-493b-b0ac-19625aae240f.png"
     },
     {
-      title: "Privacy and Security in Online Social Media",
+      title: "Privacy and Security in Social Media",
       provider: "NPTEL",
       description: "Understanding privacy and security challenges in social media platforms",
-      date: "January-April 2025",
-      score: "Score: 60%",
-      image: "/lovable-uploads/79344da7-973e-4d3c-8af9-316706607608.png"
-    },
-    {
-      title: "A Joy of Computing Using Python",
-      provider: "NPTEL",
-      description: "Python programming with focus on computational thinking and problem solving",
-      date: "July-October 2023",
-      score: "Score: 57%",
-      image: "/lovable-uploads/7657955f-dd30-4c56-a68f-4057734f8762.png"
-    },
-    {
-      title: "Introduction to Artificial Intelligence (AI)",
-      provider: "IBM (Coursera)",
-      description: "Comprehensive introduction to artificial intelligence concepts and applications",
-      date: "March 2024",
+      date: "2024",
       score: "Completed Successfully",
-      image: "/lovable-uploads/08155e08-c3cd-4291-9e4c-94bb9c72bed9.png"
+      image: "/lovable-uploads/79344da7-973e-4d3c-8af9-316706607608.png"
     },
     {
       title: "Oracle SQL Basics",
       provider: "COURSERA (LEARNQUEST)",
       description: "Fundamental SQL concepts and database management with Oracle",
-      date: "February 2024",
+      date: "2024",
       score: "Completed Successfully",
       image: "/lovable-uploads/adce0369-aa69-4691-9b48-43eac96594d0.png"
-    },
-    {
-      title: "Cyber Kushti: Hackathon Participation",
-      provider: "BREACHX",
-      description: "Successfully participated in the Cyber Kushti cybersecurity hackathon",
-      date: "February 2025",
-      score: "Certificate of Participation",
-      image: "/lovable-uploads/2731a8e6-0d07-43f5-9f68-79100329d60d.png"
-    },
-    {
-      title: "Basics of Python",
-      provider: "INFOSYS SPRINGBOARD",
-      description: "Fundamental Python programming concepts and practical applications",
-      date: "September 2024",
-      score: "Completed Successfully",
-      image: "/lovable-uploads/0316cbdc-df07-4974-8b7d-dd89854c933f.png"
-    },
-    {
-      title: "Java Programming Fundamentals",
-      provider: "INFOSYS SPRINGBOARD",
-      description: "Core Java programming concepts and object-oriented programming principles",
-      date: "November 2024",
-      score: "Completed Successfully",
-      image: "/lovable-uploads/10e6747b-43a3-473f-926f-2e4b05a7b833.png"
-    },
-    {
-      title: "Prompt Engineering",
-      provider: "INFOSYS SPRINGBOARD",
-      description: "Advanced techniques for effective AI prompt design and optimization",
-      date: "November 2024",
-      score: "Completed Successfully",
-      image: "/lovable-uploads/276ad3a8-50c6-442b-97c0-216181c848b2.png"
     }
   ];
 

@@ -38,7 +38,7 @@ const Education = () => {
                 <p className="text-blue-600 dark:text-blue-300 mb-2 font-medium text-lg">Computer Science Engineering</p>
                 <div className="flex items-center text-gray-700 dark:text-gray-300 text-sm mb-2">
                   <MapPin size={16} className="mr-2 text-blue-600 dark:text-blue-400" />
-                  K S Rangasamy College of Technology, Salem, Tamil Nadu
+                  K S Rangasamy College of Technology, Namakkal, Tamil Nadu
                 </div>
                 <div className="flex items-center text-gray-700 dark:text-gray-300 text-sm mb-4">
                   <Calendar size={16} className="mr-2 text-blue-600 dark:text-blue-400" />
