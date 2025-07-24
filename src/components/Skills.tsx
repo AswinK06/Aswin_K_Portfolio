@@ -144,8 +144,8 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "Java", level: 80 },
-        { name: "Javascript", level: 80 },
+        { name: "Java", level: 85 },
+        { name: "JavaScript", level: 80 },
         { name: "C", level: 75 },
         { name: "Python", level: 70 }
       ],
@@ -154,12 +154,11 @@ const Skills = () => {
     {
       title: "Web Technologies",
       skills: [
-        { name: "HTML/CSS", level: 85 },
-        // { name: "CSS", level: 85 },
-        { name: "Bootstrap", level: 80 },
+        { name: "HTML/CSS", level: 90 },
+        { name: "Bootstrap", level: 85 },
         { name: "React.js", level: 80 },
-        { name: "Express.js", level: 75 },
-        { name: "Node.js", level: 75 }
+        { name: "Node.js", level: 75 },
+        { name: "Express.js", level: 75 }
       ],
       icon: Globe
     },
@@ -172,11 +171,12 @@ const Skills = () => {
       icon: Database
     },
     {
-      title: "AI/ML Tools",
+      title: "Frameworks & Libraries",
       skills: [
-        { name: "TensorFlow", level: 80 },
-        { name: "Pandas", level: 85 },
-        { name: "NumPy", level: 80 }
+        { name: "Spring Boot", level: 75 },
+        { name: "Hibernate", level: 70 },
+        { name: "JPA", level: 70 },
+        { name: "JDBC", level: 80 }
       ],
       icon: Brain
     },
@@ -191,9 +191,10 @@ const Skills = () => {
     {
       title: "Development & Testing Tools",
       skills: [
-        { name: "Figma", level: 75 },
-        { name: "Postman", level: 80 },
-        { name: "Selenium Testing", level: 65 },
+        { name: "Postman", level: 85 },
+        { name: "Selenium", level: 75 },
+        { name: "JUnit", level: 70 },
+        { name: "Eclipse IDE", level: 80 }
       ],
       icon: Wrench
     }
