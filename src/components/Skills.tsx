@@ -168,7 +168,7 @@ const Skills = () => {
       title: "Databases",
       skills: [
         { name: "MySQL", level: 85 },
-        { name: "SQL Stored Procedures ", level: 80 },
+        // { name: "SQL Stored Procedures ", level: 80 },
         { name: "MongoDB", level: 75 }
       ],
       icon: Database
