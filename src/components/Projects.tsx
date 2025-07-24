@@ -5,16 +5,31 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
+      title: "IPL Match Prediction",
+      description:
+        "Built a machine learning model to predict IPL match outcomes using past match data. Implemented Logistic Regression and Random Forest algorithms for classification and used Pandas, Scikit-learn, and Matplotlib for preprocessing and analysis.",
+      tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "Matplotlib", "Logistic Regression", "Random Forest"],
+      type: "Machine Learning Project",
+      highlights: [
+        "Predictive modeling with ML algorithms",
+        "Data preprocessing & analysis",
+        "Statistical analysis of cricket data",
+        "Model evaluation & optimization",
+      ],
+      codeUrl: "https://github.com/AswinK06/IPL-Match-Prediction",
+      demoUrl: "https://iplmatchpredict.streamlit.app/",
+    },
+    {
       title: "Wanderluxe",
       description:
-        "Developed a comprehensive Tourism Management System using JavaScript & MySQL, streamlining booking processes and reducing manual effort by 40%. Features include automated booking management, database optimization, and user-friendly interface design.",
-      tech: ["JavaScript", "MySQL", "HTML", "CSS", "Bootstrap"],
+        "Developed a Tourism Management System using JavaScript & MySQL, streamlining bookings and reducing manual effort by 40%. Features comprehensive booking automation and database optimization using HTML, CSS, JavaScript, MySQL, and VS Code.",
+      tech: ["JavaScript", "MySQL", "HTML", "CSS", "VS Code"],
       type: "Tourism Management System",
       highlights: [
-        "40% efficiency improvement in bookings",
-        "Automated booking management system",
-        "Database optimization for performance",
-        "Responsive user interface design",
+        "40% efficiency improvement",
+        "Booking automation",
+        "Database optimization",
+        "User-friendly interface",
       ],
       codeUrl: "https://github.com/AswinK06/Tourism-Management-System",
       demoUrl: "https://wanderluxe-demo.netlify.app/",
@@ -22,32 +37,25 @@ const Projects = () => {
     {
       title: "Agriseithi",
       description:
-        "Built a responsive agricultural technology platform providing real-time insights and data-driven solutions for farmers. Integrated multiple APIs for weather data, crop information, and market prices to enhance farming accessibility and decision-making.",
-      tech: ["React.js", "JavaScript", "APIs", "HTML", "CSS", "Responsive Design"],
+        "Built a responsive web platform providing real-time agricultural insights, integrating APIs for data-driven updates using React.js, HTML, CSS, and JavaScript to enhance accessibility for farmers.",
+      tech: [
+        "React.js",
+        "JavaScript",
+        "APIs",
+        "HTML",
+        "CSS",
+        "Responsive Design",
+      ],
       type: "Agricultural Technology Platform",
       highlights: [
-        "Real-time agricultural data integration",
-        "Multi-API integration for comprehensive insights",
-        "Enhanced farmer accessibility and usability",
-        "Responsive design for mobile access",
+        "Real-time data integration",
+        "API integration",
+        "Farmer accessibility",
+        "Responsive design",
+        "Data-driven insights",
       ],
       codeUrl: "https://github.com/AswinK06/Agriseithi",
       demoUrl: "https://agriseithi.netlify.app/",
-    },
-    {
-      title: "Temple Management System",
-      description:
-        "Developed a comprehensive temple management application using Java and MySQL. The system streamlines temple operations, manages devotee information, handles donations, and schedules religious events with an intuitive user interface.",
-      tech: ["Java", "MySQL", "JDBC", "Swing", "Database Design"],
-      type: "Management System Application",
-      highlights: [
-        "Complete temple operations management",
-        "Devotee and donation tracking",
-        "Event scheduling and management",
-        "Secure database design and implementation",
-      ],
-      codeUrl: "https://github.com/AswinK06/Temple-Management-System",
-      demoUrl: "https://temple-management-demo.netlify.app/",
     },
   ];
 

@@ -39,16 +39,16 @@ const About = () => {
         {/* Text Content */}
         <div className="space-y-6 text-gray-800 dark:text-gray-200">
           <p className="border-l-4 border-purple-500 dark:border-purple-400 pl-5 text-lg font-medium leading-relaxed hover:translate-x-1 transition-all duration-300">
-            Passionate Java Full Stack Developer with expertise in Web API Testing, Secure Coding, and comprehensive application development. Proficient in Java frameworks like Spring Boot, Hibernate, and experienced in building robust database-driven applications using MySQL.
+            Enthusiastic AI/ML beginner with hands-on exposure to Object Detection using TensorFlow/Keras and a strong foundation in Python and ReactJS. Actively learning LLMs, LangChain, and Generative AI with a keen interest in building scalable, real-world AI solutions.
           </p>
           <p className="border-l-4 border-indigo-500 dark:border-indigo-400 pl-5 text-lg font-medium leading-relaxed hover:translate-x-1 transition-all duration-300">
-            Currently pursuing B.E. in Computer Science at K S Rangasamy College of Technology, Namakkal. Continuously expanding my knowledge in full-stack development, secure coding practices, and modern web technologies to create innovative and scalable solutions.
+            Currently pursuing my B.E. in Computer Science at K S Rangasamy College of Technology, I'm always exploring new tools and frameworks in AI/ML, web development, and modern technologies to craft innovative solutions.
           </p>
 
           {/* Location & Resume */}
           <div className="flex flex-wrap items-center gap-4 mt-6">
             <span className="flex items-center gap-2 bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm">
-              <MapPin size={16} /> Namakkal, Tamil Nadu
+              <MapPin size={16} /> Salem, Tamil Nadu
             </span>
             <span className="flex items-center gap-2 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-200 px-4 py-2 rounded-full text-sm font-medium shadow-sm">
               <Phone size={16} /> +91 9578413638
@@ -66,10 +66,10 @@ const About = () => {
         {/* Icon Cards */}
         <div className="grid grid-cols-2 gap-6">
           {[
-            { icon: Code, title: "Java Full Stack", desc: "Spring Boot, Hibernate & JPA expertise" },
-            { icon: Database, title: "Database Design", desc: "MySQL & advanced SQL proficiency" },
-            { icon: Globe, title: "Web Development", desc: "React.js & comprehensive full-stack development" },
-            { icon: Shield, title: "Secure Coding", desc: "Web API testing & security best practices" },
+            { icon: Code, title: "AI/ML Development", desc: "TensorFlow, Keras & Python expertise" },
+            { icon: Database, title: "Database Design", desc: "MySQL & MongoDB proficiency" },
+            { icon: Globe, title: "Web Development", desc: "React.js & full-stack development" },
+            { icon: Shield, title: "Object Detection", desc: "Computer vision & AI applications" },
           ].map((item, index) => (
             <div
               key={index}

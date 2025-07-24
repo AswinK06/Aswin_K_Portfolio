@@ -14,12 +14,12 @@ const Hero = () => {
   const [isTyping, setIsTyping] = useState(true);
   
   const typingTexts = [
-    "Java Full Stack Developer",
-    "Web Technology Enthusiast 🚀",
-    "Secure Coding Specialist",
-    "Web API Testing Expert",
-    "Database Designer",
-    "Problem Solver & Innovator"
+    "AI/ML Intern @ EduSkills & Google",
+    "Future Software Engineer 🚀",
+    "Tech Symposium Winner",
+    "Web App Designer",
+    "MERN Stack Developer",
+    "LeetCode Problem Solver"
   ];
 
   useEffect(() => {
@@ -83,10 +83,10 @@ const Hero = () => {
             </div>
           </div>
           
-           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-             Passionate Java Full Stack Developer with expertise in Web API Testing, Secure Coding, and 
-             comprehensive application development. Specialized in building robust, scalable, and secure web solutions.
-           </p>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            Passionate Web Technology enthusiast with hands-on experience in Web API Testing, 
+            Secure Coding, and Full-Stack Development. Building secure, scalable, and efficient web solutions.
+          </p>
         </div>
         
         <div className="flex justify-center gap-4 mb-8 animate-fade-in">
