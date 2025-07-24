@@ -159,8 +159,7 @@ const Skills = () => {
         { name: "Bootstrap", level: 80 },
         { name: "React.js", level: 80 },
         { name: "Express.js", level: 75 },
-        { name: "Node.js", level: 75 },
-        // { name: "Angular(Basics)", level: 60 }
+        { name: "Node.js", level: 75 }
       ],
       icon: Globe
     },
@@ -168,7 +167,6 @@ const Skills = () => {
       title: "Databases",
       skills: [
         { name: "MySQL", level: 85 },
-        { name: "SQL Stored Procedures ", level: 80 },
         { name: "MongoDB", level: 75 }
       ],
       icon: Database

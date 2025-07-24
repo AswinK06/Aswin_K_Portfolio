@@ -4,20 +4,20 @@ import { Button } from '@/components/ui/button';
 
 const Projects = () => {
   const projects = [
-    // {
-    //   title: "IPL Match Prediction",
-    //   description:
-    //     "Built a machine learning model to predict IPL match outcomes using past match data. Implemented Logistic Regression and Random Forest algorithms with 85% accuracy. Used Python libraries for data preprocessing, feature engineering, and model evaluation.",
-    //   tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Streamlit"],
-    //   type: "Machine Learning Project",
-    //   highlights: [
-    //     "85% prediction accuracy achieved",
-    //     "Advanced feature engineering",
-    //     "Multiple ML algorithms comparison",
-    //     "Interactive Streamlit dashboard",
-    //   ],
-    //   codeUrl: "https://github.com/AswinK06/IPL-Match-Prediction",
-    //   demoUrl: "https://iplmatchpredict.streamlit.app/",
+    {
+      title: "IPL Match Prediction",
+      description:
+        "Built a machine learning model to predict IPL match outcomes using past match data. Implemented Logistic Regression and Random Forest algorithms with 85% accuracy. Used Python libraries for data preprocessing, feature engineering, and model evaluation.",
+      tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Streamlit"],
+      type: "Machine Learning Project",
+      highlights: [
+        "85% prediction accuracy achieved",
+        "Advanced feature engineering",
+        "Multiple ML algorithms comparison",
+        "Interactive Streamlit dashboard",
+      ],
+      codeUrl: "https://github.com/AswinK06/IPL-Match-Prediction",
+      demoUrl: "https://iplmatchpredict.streamlit.app/",
     },
     {
       title: "Wanderluxe - Tourism Management System",
@@ -61,8 +61,8 @@ const Projects = () => {
         "Event scheduling automation",
         "Inventory management",
       ],
-      codeUrl: "https://github.com/AswinK06/Consultancy-Project",
-      demoUrl: "https://gokul-kovil-project.web.app/home",
+      codeUrl: "https://github.com/AswinK06/Temple-Management-System",
+      demoUrl: "https://temple-management-demo.netlify.app/",
     },
   ];
 
