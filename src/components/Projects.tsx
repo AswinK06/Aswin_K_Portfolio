@@ -5,6 +5,21 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
+      title: "IPL Match Prediction",
+      description:
+        "Built a machine learning model to predict IPL match outcomes using past match data. Implemented Logistic Regression and Random Forest algorithms for classification and used Pandas, Scikit-learn, and Matplotlib for preprocessing and analysis.",
+      tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "Matplotlib", "Logistic Regression", "Random Forest"],
+      type: "Machine Learning Project",
+      highlights: [
+        "Predictive modeling with ML algorithms",
+        "Data preprocessing & analysis",
+        "Statistical analysis of cricket data",
+        "Model evaluation & optimization",
+      ],
+      codeUrl: "https://github.com/AswinK06/IPL-Match-Prediction",
+      demoUrl: "https://iplmatchpredict.streamlit.app/",
+    },
+    {
       title: "Wanderluxe",
       description:
         "Developed a Tourism Management System using JavaScript & MySQL, streamlining bookings and reducing manual effort by 40%. Features comprehensive booking automation and database optimization using HTML, CSS, JavaScript, MySQL, and VS Code.",
@@ -41,28 +56,6 @@ const Projects = () => {
       ],
       codeUrl: "https://github.com/AswinK06/Agriseithi",
       demoUrl: "https://agriseithi.netlify.app/",
-    },
-    {
-      title: "Temple Management System",
-      description:
-        "Created a user-friendly UI/UX for a temple website, designing login/signup modules, a landing page, and an employment details section using Figma for clean, intuitive design.",
-      tech: [
-        "Figma",
-        "UI/UX Design",
-        "User Interface",
-        "Prototyping",
-        "Web Design",
-      ],
-      type: "UI/UX Design Project",
-      highlights: [
-        "User-friendly interface design",
-        "Login/signup module design",
-        "Landing page creation",
-        "Employment details section",
-        "Clean and intuitive design",
-      ],
-      codeUrl: "https://github.com/AswinK06/Temple-Management-System",
-      demoUrl: "https://temple-management-demo.netlify.app/",
     },
   ];
 

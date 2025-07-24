@@ -35,7 +35,7 @@ const Experience = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-purple-500/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                 <div className="relative bg-white/80 dark:bg-slate-800/60 backdrop-blur-sm p-8 rounded-xl border border-purple-200/50 dark:border-purple-500/30 hover:border-violet-400/50 dark:hover:border-violet-400/50 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-2xl">
                   <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">AICTE Virtual Internship – Object Detection (AI/ML)</h3>
-                  <p className="text-blue-600 dark:text-blue-400 mb-2 font-medium text-lg">AICTE (10 weeks)</p>
+                  <p className="text-blue-600 dark:text-blue-400 mb-2 font-medium text-lg">Google Developers & EduSkills</p>
                   <div className="flex items-center text-gray-700 dark:text-gray-300 text-sm mb-6">
                     <Calendar size={16} className="mr-2 text-blue-600 dark:text-blue-400" />
                     April – July 2025 (10 weeks)
@@ -44,15 +44,15 @@ const Experience = () => {
                   <ul className="space-y-3 text-gray-800 dark:text-gray-300">
                     <li className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Built object detection models using TensorFlow and Keras</span>
+                      <span>Completed a virtual internship focused on Object Detection, supported by Google Developers and EduSkills</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-purple-600 dark:bg-purple-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Applied computer vision techniques including image annotation, training, and model evaluation</span>
+                      <span>Gained hands-on experience with image annotation, model training using TensorFlow/Keras, and evaluation of object detection systems</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-blue-600 dark:bg-blue-400 rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Gained exposure to real-world AI-driven applications and workflows</span>
+                      <span>Explored applications of AI in real-world scenarios and enhanced understanding of computer vision techniques in production settings</span>
                     </li>
                   </ul>
                 </div>
