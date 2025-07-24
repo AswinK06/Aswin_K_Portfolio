@@ -160,7 +160,7 @@ const Skills = () => {
         { name: "React.js", level: 80 },
         { name: "Express.js", level: 75 },
         { name: "Node.js", level: 75 },
-        { name: "Angular(Basics)", level: 60 }
+        // { name: "Angular(Basics)", level: 60 }
       ],
       icon: Globe
     },
