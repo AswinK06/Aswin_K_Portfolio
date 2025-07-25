@@ -40,7 +40,7 @@ const Hero = () => {
           setIsTyping(true);
         }
       }
-    }, isTyping ? 200 : 100); // Typing speed vs backspacing speed
+    }, isTyping ? 75 : 35); // Typing speed vs backspacing speed
 
     return () => clearTimeout(timeout);
   }, [currentText, currentIndex, isTyping, typingTexts]);
