@@ -61,7 +61,7 @@ const Projects = () => {
         "Event scheduling automation",
         "Inventory management",
       ],
-      codeUrl: "https://github.com/AswinK06/Consultancy-Projecthttps://github.com/AswinK06/Consultancy-Project",
+      codeUrl: "https://github.com/AswinK06/Consultancy-Project",
       demoUrl: "https://gokul-kovil-project.web.app/home",
     },
   ];
