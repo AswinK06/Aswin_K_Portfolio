@@ -158,6 +158,7 @@ const Skills = () => {
         // { name: "CSS", level: 85 },
         { name: "Bootstrap", level: 80 },
         { name: "React.js", level: 80 },
+        { name: "Angular.js (basics)", level: 60 },
         { name: "Express.js", level: 75 },
         { name: "Node.js", level: 75 }
       ],
@@ -167,6 +168,7 @@ const Skills = () => {
       title: "Databases",
       skills: [
         { name: "MySQL", level: 85 },
+        { name: "SQL Stored Procedure", level: 75 },
         { name: "MongoDB", level: 75 }
       ],
       icon: Database
@@ -274,4 +276,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
