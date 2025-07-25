@@ -30,7 +30,7 @@ const Hero = () => {
         if (currentText.length < currentString.length) {
           setCurrentText(currentString.slice(0, currentText.length + 1));
         } else {
-          setTimeout(() => setIsTyping(false), 4000); // Wait 4s before backspacing
+          setTimeout(() => setIsTyping(false), 2000); // Wait 4s before backspacing
         }
       } else {
         if (currentText.length > 0) {
@@ -40,7 +40,7 @@ const Hero = () => {
           setIsTyping(true);
         }
       }
-    }, isTyping ? 100 : 50); // Typing speed vs backspacing speed
+    }, isTyping ? 200 : 100); // Typing speed vs backspacing speed
 
     return () => clearTimeout(timeout);
   }, [currentText, currentIndex, isTyping, typingTexts]);
