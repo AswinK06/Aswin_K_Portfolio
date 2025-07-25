@@ -16,10 +16,10 @@ const Hero = () => {
   const typingTexts = [
     "AI/ML Intern @ EduSkills & Google",
     "Future Software Engineer 🚀",
-    "Tech Symposium Winner",
-    "Web App Designer",
-    "MERN Stack Developer",
-    "LeetCode Problem Solver"
+    "Tech Symposium Winner 🏆",
+    "Web App Designer 🌐",
+    "MERN Stack Developer ⚛️",
+    "LeetCode Problem Solver 🧩"
   ];
 
   useEffect(() => {
