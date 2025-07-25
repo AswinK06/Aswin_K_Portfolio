@@ -85,7 +85,7 @@ const Hero = () => {
           
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
             Passionate web technology enthusiast with hands-on experience in Web API testing, secure coding, and full-stack development. 
-            Focused on building secure, scalable, and testable web solutions aligned with industry practices like SDLC, STLC, and Agile.
+            Focused on building secure, scalable, and testable web solutions.
           </p>
         </div>
         
