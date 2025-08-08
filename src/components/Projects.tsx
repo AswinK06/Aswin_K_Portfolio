@@ -5,21 +5,6 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const projects = [
     {
-      title: "IPL Match Prediction",
-      description:
-        "Built a machine learning model to predict IPL match outcomes using past match data. Implemented Logistic Regression and Random Forest algorithms with 85% accuracy. Used Python libraries for data preprocessing, feature engineering, and model evaluation.",
-      tech: ["Python", "Machine Learning", "Pandas", "Scikit-learn", "NumPy", "Matplotlib", "Streamlit"],
-      type: "Machine Learning Project",
-      highlights: [
-        "85% prediction accuracy achieved",
-        "Advanced feature engineering",
-        "Multiple ML algorithms comparison",
-        "Interactive Streamlit dashboard",
-      ],
-      codeUrl: "https://github.com/AswinK06/IPL-Match-Prediction",
-      demoUrl: "https://iplmatchpredict.streamlit.app/",
-    },
-    {
       title: "Wanderluxe - Tourism Management System",
       description:
         "Comprehensive tourism management platform built with JavaScript and MySQL. Features include tour booking, package management, customer registration, and automated billing system. Reduced manual processing time by 40% through automation.",

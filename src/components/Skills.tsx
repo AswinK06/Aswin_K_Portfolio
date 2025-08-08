@@ -177,8 +177,7 @@ const Skills = () => {
       title: "AI/ML Tools",
       skills: [
         { name: "TensorFlow", level: 80 },
-        { name: "Pandas", level: 85 },
-        { name: "NumPy", level: 80 }
+        { name: "Keras", level: 75 }
       ],
       icon: Brain
     },
