@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
-import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -40,23 +39,23 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
-      // Initialize EmailJS with your public key
-      emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your actual EmailJS public key
-      
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        subject: formData.subject || 'New Contact Form Message',
-        message: formData.message,
-        to_email: 'aswinkannan0606@gmail.com',
-      };
+      // Send email via Supabase edge function
+      const response = await fetch('/functions/v1/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
 
-      // Send email using EmailJS
-      await emailjs.send(
-        'service_cx2183e', // You'll need to replace this with your EmailJS service ID
-        'template_qdgwdxm', // You'll need to replace this with your EmailJS template ID
-        templateParams
-      );
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
 
       toast({
         title: "Message Sent Successfully!",
@@ -72,7 +71,7 @@ const Contact = () => {
       });
 
     } catch (error) {
-      console.error('EmailJS Error:', error);
+      console.error('Send Email Error:', error);
       toast({
         title: "Failed to Send Message",
         description: "Something went wrong. Please try again or contact me directly at aswinkannan0606@gmail.com",
