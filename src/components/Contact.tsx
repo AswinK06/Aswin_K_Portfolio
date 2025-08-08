@@ -53,8 +53,8 @@ const Contact = () => {
 
       // Send email using EmailJS
       await emailjs.send(
-        'YOUR_SERVICE_ID', // You'll need to replace this with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // You'll need to replace this with your EmailJS template ID
+        'service_cx2183e', // You'll need to replace this with your EmailJS service ID
+        'template_qdgwdxm', // You'll need to replace this with your EmailJS template ID
         templateParams
       );
 
