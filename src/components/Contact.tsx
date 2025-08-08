@@ -1,10 +1,88 @@
 
-import { Mail, Phone, MapPin, Github, Linkedin } from 'lucide-react';
+import { useState } from 'react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
+import { useToast } from '@/components/ui/use-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Missing Information",
+        description: "Please fill in all required fields (Name, Email, and Message).",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      // Initialize EmailJS with your public key
+      emailjs.init("YOUR_PUBLIC_KEY"); // You'll need to replace this with your actual EmailJS public key
+      
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject || 'New Contact Form Message',
+        message: formData.message,
+        to_email: 'aswinkannan0606@gmail.com',
+      };
+
+      // Send email using EmailJS
+      await emailjs.send(
+        'YOUR_SERVICE_ID', // You'll need to replace this with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // You'll need to replace this with your EmailJS template ID
+        templateParams
+      );
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast({
+        title: "Failed to Send Message",
+        description: "Something went wrong. Please try again or contact me directly at aswinkannan0606@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 px-4 relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-indigo-900 dark:from-slate-900 dark:via-purple-900 dark:to-indigo-900 light:from-white light:via-purple-50 light:to-indigo-100">
       {/* Enhanced Background */}
@@ -81,33 +159,72 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-gradient-to-br from-slate-800/60 to-slate-900/40 light:from-white/80 light:to-purple-50/60 backdrop-blur-sm p-8 rounded-2xl border border-slate-700/50 light:border-purple-200/50 light:shadow-xl">
             <h3 className="text-xl font-semibold text-white light:text-gray-800 mb-6 bg-gradient-to-r from-purple-400 to-indigo-400 light:from-purple-600 light:to-indigo-600 bg-clip-text text-transparent">Send a Message</h3>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label className="text-gray-300 light:text-gray-600 text-sm mb-2 block">Name</label>
-                  <Input className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 focus:border-purple-400 light:focus:border-purple-500 rounded-lg" placeholder="Your name" />
+                  <label className="text-gray-300 light:text-gray-600 text-sm mb-2 block">Name *</label>
+                  <Input 
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 focus:border-purple-400 light:focus:border-purple-500 rounded-lg" 
+                    placeholder="Your name" 
+                    required
+                  />
                 </div>
                 <div>
-                  <label className="text-gray-300 light:text-gray-600 text-sm mb-2 block">Email</label>
-                  <Input className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 focus:border-indigo-400 light:focus:border-indigo-500 rounded-lg" placeholder="your.email@example.com" />
+                  <label className="text-gray-300 light:text-gray-600 text-sm mb-2 block">Email *</label>
+                  <Input 
+                    name="email"
+                    type="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 focus:border-indigo-400 light:focus:border-indigo-500 rounded-lg" 
+                    placeholder="your.email@example.com" 
+                    required
+                  />
                 </div>
               </div>
               
               <div>
                 <label className="text-gray-300 light:text-gray-600 text-sm mb-2 block">Subject</label>
-                <Input className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 focus:border-purple-400 light:focus:border-purple-500 rounded-lg" placeholder="Project discussion" />
-              </div>
-              
-              <div>
-                <label className="text-gray-300 light:text-gray-600 text-sm mb-2 block">Message</label>
-                <Textarea 
-                  className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 min-h-[120px] focus:border-indigo-400 light:focus:border-indigo-500 rounded-lg" 
-                  placeholder="Tell me about your project or just say hello!"
+                <Input 
+                  name="subject"
+                  value={formData.subject}
+                  onChange={handleInputChange}
+                  className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 focus:border-purple-400 light:focus:border-purple-500 rounded-lg" 
+                  placeholder="Project discussion" 
                 />
               </div>
               
-              <Button className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 light:from-purple-500 light:to-indigo-500 light:hover:from-purple-600 light:hover:to-indigo-600 py-3 rounded-lg font-semibold">
-                Send Message
+              <div>
+                <label className="text-gray-300 light:text-gray-600 text-sm mb-2 block">Message *</label>
+                <Textarea 
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  className="bg-slate-700/50 light:bg-white light:border-purple-200 border-slate-600 text-white light:text-gray-800 min-h-[120px] focus:border-indigo-400 light:focus:border-indigo-500 rounded-lg" 
+                  placeholder="Tell me about your project or just say hello!"
+                  required
+                />
+              </div>
+              
+              <Button 
+                type="submit"
+                disabled={isLoading}
+                className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 light:from-purple-500 light:to-indigo-500 light:hover:from-purple-600 light:hover:to-indigo-600 py-3 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isLoading ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    <Send size={16} className="mr-2" />
+                    Send Message
+                  </>
+                )}
               </Button>
             </form>
           </div>
