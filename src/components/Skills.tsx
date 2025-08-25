@@ -145,7 +145,6 @@ const Skills = () => {
       title: "Programming Languages",
       skills: [
         { name: "Java", level: 80 },
-        { name: "Javascript", level: 80 },
         { name: "C", level: 75 },
         { name: "Python", level: 70 }
       ],
@@ -156,10 +155,11 @@ const Skills = () => {
       skills: [
         { name: "HTML/CSS", level: 85 },
         // { name: "CSS", level: 85 },
+        { name: "Javascript", level: 80 }
         { name: "Bootstrap", level: 80 },
         { name: "React.js", level: 80 },
         { name: "Node.js", level: 75 },
-        { name: "Express.js", level: 75 },
+        // { name: "Express.js", level: 75 },
         { name: "Angular.js(Basics)", level: 60 }
       ],
       icon: Globe
@@ -168,7 +168,7 @@ const Skills = () => {
       title: "Databases",
       skills: [
         { name: "MySQL", level: 85 },
-        { name: "SQL Stored Procedure", level: 75 },
+        // { name: "SQL Stored Procedure", level: 75 },
         { name: "MongoDB", level: 75 }
       ],
       icon: Database
@@ -185,7 +185,7 @@ const Skills = () => {
       title: "Version Control",
       skills: [
         { name: "Git", level: 85 },
-        { name: "GitHub", level: 90 }
+        { name: "GitHub", level: 80 }
       ],
       icon: Settings
     },
@@ -193,8 +193,8 @@ const Skills = () => {
       title: "Development & Testing Tools",
       skills: [
         { name: "Figma", level: 75 },
-        { name: "Postman", level: 80 },
-        { name: "Selenium Testing", level: 65 },
+        { name: "Postman", level: 70 },
+        // { name: "Selenium Testing", level: 65 },
       ],
       icon: Wrench
     }
