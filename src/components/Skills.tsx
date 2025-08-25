@@ -137,7 +137,7 @@
 // export default Skills;
 
 
-import { Award, Sparkles, Code, Globe, Database, Settings, Brain, Wrench } from 'lucide-react';
+import { Award, Sparkles, Code, Globe, Database, Settings, Brain, Wrench, Target } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -153,13 +153,12 @@ const Skills = () => {
     {
       title: "Web Technologies",
       skills: [
-        { name: "HTML/CSS", level: 85 },
-        // { name: "CSS", level: 85 },
-        { name: "Javascript", level: 80 }
+        { name: "HTML", level: 85 },
+        { name: "CSS", level: 85 },
         { name: "Bootstrap", level: 80 },
+        { name: "JavaScript", level: 80 },
         { name: "React.js", level: 80 },
-        { name: "Node.js", level: 75 },
-        { name: "Angular.js(Basics)", level: 60 }
+        { name: "Node.js", level: 75 }
       ],
       icon: Globe
     },
@@ -193,9 +192,18 @@ const Skills = () => {
       skills: [
         { name: "Figma", level: 75 },
         { name: "Postman", level: 70 },
-        // { name: "Selenium Testing", level: 65 },
+        { name: "Canva", level: 65 }
       ],
       icon: Wrench
+    },
+    {
+      title: "Development Practices",
+      skills: [
+        { name: "REST APIs", level: 80 },
+        { name: "API Validation", level: 75 },
+        { name: "MERN Stack", level: 80 }
+      ],
+      icon: Target
     }
   ];
 
