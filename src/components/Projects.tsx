@@ -37,14 +37,14 @@ const Projects = () => {
     {
       title: "Temple Management System",
       description:
-        "Digital solution for temple administration including devotee registration, donation tracking, event management, and inventory control. Built with modern web technologies to streamline religious institution operations.",
-      tech: ["Java", "Spring Boot", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
-      type: "Management System",
+        "Designed a user-friendly website using Figma with wireframes, prototypes, and user flows. Built login/signup, landing, and employment modules ensuring clean navigation and accessibility.",
+      tech: ["Figma", "HTML", "CSS", "JavaScript", "Wireframes", "Prototypes"],
+      type: "UI/UX Design & Development",
       highlights: [
-        "Complete devotee management",
-        "Donation tracking system",
-        "Event scheduling automation",
-        "Inventory management",
+        "User-friendly design with Figma",
+        "Complete wireframes and prototypes",
+        "Login/signup module implementation",
+        "Clean navigation and accessibility",
       ],
       codeUrl: "https://github.com/AswinK06/Consultancy-Project",
       demoUrl: "https://gokul-kovil-project.web.app/home",

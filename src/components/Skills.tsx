@@ -137,7 +137,7 @@
 // export default Skills;
 
 
-import { Award, Sparkles, Code, Globe, Database, Settings, Brain, Wrench, Target } from 'lucide-react';
+import { Award, Sparkles, Code, Globe, Database, Settings, Brain, Wrench } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -195,15 +195,6 @@ const Skills = () => {
         { name: "Canva", level: 65 }
       ],
       icon: Wrench
-    },
-    {
-      title: "Development Practices",
-      skills: [
-        { name: "REST APIs", level: 80 },
-        { name: "API Validation", level: 75 },
-        { name: "MERN Stack", level: 80 }
-      ],
-      icon: Target
     }
   ];
 
